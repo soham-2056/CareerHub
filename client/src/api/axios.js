@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "/api" });
+const API_URL = "https://careerhub-api-mvti.onrender.com/api";
+
+const api = axios.create({
+  baseURL: API_URL,
+});
 
 // ─── In-memory access token ───────────────────────────────────────────────────
 // Kept in memory (not localStorage) so it can't be stolen via XSS.
@@ -63,7 +67,12 @@ api.interceptors.response.use(
         const storedRefreshToken = localStorage.getItem("refreshToken");
         if (!storedRefreshToken) throw new Error("No refresh token");
 
-        const { data } = await axios.post("/api/auth/refresh", {
+        const { data } = await axios.post(
+  "https://careerhub-api-mvti.onrender.com/api/auth/refresh",
+  {
+    refreshToken: storedRefreshToken,
+  }
+);
           refreshToken: storedRefreshToken,
         });
 
