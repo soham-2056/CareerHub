@@ -3,7 +3,7 @@
 ```
 CareerHub/
 ├── client/   ← React 18 + Vite       → http://localhost:5173
-├── server/   ← Express + MongoDB      → http://localhost:5000
+├── server/   ← Express + MongoDB      → https://careerhub-api-mvti.onrender.com
 └── pages/    ← Old HTML (reference only)
 ```
 
@@ -58,7 +58,7 @@ npm run dev
 You should see:
 ```
 ✅  MongoDB Atlas connected
-🚀  Server running  →  http://localhost:5000
+🚀  Server running  →  https://careerhub-api-mvti.onrender.com
 ```
 
 **Terminal 2 — Frontend:**
@@ -73,10 +73,10 @@ Open → **http://localhost:5173**
 **Seed internship data (run once):**
 ```bash
 # PowerShell
-Invoke-WebRequest -Uri http://localhost:5000/api/internships/seed -Method POST
+Invoke-WebRequest -Uri https://careerhub-api-mvti.onrender.com/api/internships/seed -Method POST
 
 # or in browser, just visit:
-# http://localhost:5000/api/internships/seed  (won't work — needs POST)
+# https://careerhub-api-mvti.onrender.com/api/internships/seed  (won't work — needs POST)
 # Use Postman or the PowerShell command above
 ```
 

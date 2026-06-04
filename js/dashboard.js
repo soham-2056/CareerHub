@@ -64,7 +64,7 @@ async function loadDashboardData() {
         }
 
         // 5. Get total internships available
-        const internshipsResponse = await fetch("http://localhost:5000/api/internships");
+        const internshipsResponse = await fetch("https://careerhub-api-mvti.onrender.com/api/internships");
         const totalCardEl = document.querySelector(".cards .card:nth-child(4) h2");
         if (totalCardEl) {
             if (internshipsResponse.ok) {

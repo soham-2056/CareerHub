@@ -35,7 +35,7 @@ async function fetchMyApplications() {
 
 async function fetchInternships(category = "", search = "") {
     try {
-        let url = "http://localhost:5000/api/internships";
+        let url = "https://careerhub-api-mvti.onrender.com/api/internships";
         const params = [];
         if (category) params.push(`category=${category}`);
         if (search) params.push(`search=${encodeURIComponent(search)}`);

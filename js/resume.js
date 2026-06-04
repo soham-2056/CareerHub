@@ -51,7 +51,7 @@ if (uploadBtn && fileInput) {
         try {
             // Since we're sending FormData, we let the browser set the boundary header
             const accessToken = localStorage.getItem("accessToken");
-            const response = await fetch("http://localhost:5000/api/resume/upload", {
+            const response = await fetch("https://careerhub-api-mvti.onrender.com/api/resume/upload", {
                 method: "POST",
                 headers: {
                     "Authorization": `Bearer ${accessToken}`

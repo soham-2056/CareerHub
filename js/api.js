@@ -1,5 +1,5 @@
 // CareerHub Vanilla JS API Client and Auth Helper
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://careerhub-api-mvti.onrender.com/api";
 
 // Helper to perform authenticated fetch requests
 async function apiFetch(endpoint, options = {}) {
