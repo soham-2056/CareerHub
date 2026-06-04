@@ -1,0 +1,146 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fc;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+/* Container */
+
+.login-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Login Box */
+
+.login-box{
+    width:420px;
+    background:white;
+
+    padding:40px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    text-align:center;
+}
+
+/* Heading */
+
+.login-box h1{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:#64748b;
+    margin-bottom:25px;
+}
+
+/* Form */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* Inputs */
+
+input{
+    width:100%;
+    padding:14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,0.2);
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Links */
+
+.links{
+    margin-top:20px;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.links a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:14px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .login-box{
+        width:90%;
+        padding:30px;
+    }
+
+    .links{
+        flex-direction:column;
+        gap:10px;
+    }
+}

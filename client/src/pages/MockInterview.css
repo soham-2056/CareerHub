@@ -1,0 +1,85 @@
+.interview-setup {
+  max-width: 540px;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.setup-icon { font-size: 3rem; color: var(--primary); }
+.interview-setup h2 { font-size: 1.4rem; font-weight: 800; }
+.interview-setup p  { color: var(--text-muted); font-size: .9rem; }
+
+.type-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  width: 100%;
+  margin: .5rem 0;
+}
+.type-btn {
+  padding: .75rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: var(--transition);
+}
+.type-btn.active, .type-btn:hover {
+  border-color: var(--primary);
+  background: var(--primary-light, #e0e7ff);
+  color: var(--primary);
+}
+
+.interview-area { display: flex; flex-direction: column; gap: 1.25rem; max-width: 720px; margin-top: 1.5rem; }
+
+.progress-bar-wrap {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-bar { height: 100%; background: var(--primary); border-radius: 3px; transition: width .4s ease; }
+.question-count { font-size: .82rem; color: var(--text-muted); }
+
+.question-card { border-left: 4px solid var(--primary); }
+.question-text { font-size: 1.05rem; font-weight: 600; line-height: 1.6; }
+
+.answer-label    { font-size: .85rem; font-weight: 600; display: block; margin-bottom: .6rem; }
+.answer-textarea {
+  width: 100%;
+  padding: .75rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  resize: vertical;
+  font-size: .9rem;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  margin-bottom: 1rem;
+}
+.answer-textarea:focus { border-color: var(--primary); }
+.answer-display { font-size: .9rem; color: var(--text-muted); line-height: 1.7; white-space: pre-wrap; }
+
+.feedback-card { border-left: 4px solid var(--success); }
+.feedback-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .75rem; }
+.feedback-icon { font-size: 1.4rem; color: var(--warning); }
+.feedback-head h3 { font-size: 1rem; font-weight: 700; }
+.feedback-text { font-size: .92rem; line-height: 1.75; color: var(--text); }
+
+.interview-done {
+  max-width: 480px;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .85rem;
+}
+.done-icon { font-size: 3.5rem; color: var(--success); }
+.interview-done h2 { font-size: 1.5rem; font-weight: 800; }
+.interview-done p  { color: var(--text-muted); font-size: .92rem; }
+.done-tip { font-style: italic; }

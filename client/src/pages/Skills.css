@@ -1,0 +1,79 @@
+.skills-form-card { margin: 1.5rem 0 1rem; }
+.skills-form-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .75rem; }
+
+.skills-form {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.skill-input, .skill-select {
+  padding: .6rem .85rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: .9rem;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.skill-input  { flex: 1; min-width: 160px; }
+.skill-input:focus, .skill-select:focus { border-color: var(--primary); }
+
+.search-wrap {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.search-icon  { position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.1rem; }
+.search-input {
+  width: 100%;
+  padding: .65rem .85rem .65rem 2.5rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: .9rem;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+.search-input:focus { border-color: var(--primary); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  transition: transform var(--transition);
+}
+.skill-card:hover { transform: translateY(-3px); }
+
+.skill-card__top  { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.skill-name       { font-weight: 600; font-size: .92rem; }
+
+.skill-card__actions { display: flex; gap: .5rem; justify-content: flex-end; }
+.icon-btn {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  border: none;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+.icon-btn.edit   { background: #ede9fe; color: #7c3aed; }
+.icon-btn.delete { background: #fef2f2; color: var(--danger); }
+.icon-btn:hover  { filter: brightness(.9); }
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+}
+.empty-state svg { font-size: 3rem; margin-bottom: .75rem; opacity: .4; }

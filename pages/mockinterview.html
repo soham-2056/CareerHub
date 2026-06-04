@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Mock Interview</title>
+
+
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/mockinterview.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <h2>CareerHub</h2>
+
+    <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="skills.html">💻 Skills Tracker</a></li>
+        <li><a href="internships.html">🎓 Internships</a></li>
+        <li><a href="resume.html">📄 Resume Analyzer</a></li>
+        <li><a href="mockinterview.html" class="active">🎤 Mock Interview</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+        <li><a href="logout.html">🚪 Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <div class="header">
+        <h1>🎤 Mock Interview</h1>
+        <p>Practice interview questions and improve confidence.</p>
+    </div>
+
+    <div class="interview-card">
+
+        <h2>Select Interview Type</h2>
+
+        <select id="category">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="hr">HR Round</option>
+        </select>
+
+        <button onclick="startInterview()">
+            Start Interview
+        </button>
+
+    </div>
+
+    <div class="question-card">
+
+        <h2>Question</h2>
+
+        <p id="questionText">
+            Click Start Interview
+        </p>
+
+        <textarea
+            id="answerBox"
+            placeholder="Write your answer here..."
+        ></textarea>
+
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button id="feedbackBtn" onclick="submitAnswer()">Submit & Get Feedback</button>
+            <button id="nextBtn" onclick="nextQuestion()" disabled>Next Question</button>
+        </div>
+
+    </div>
+
+    <div class="feedback-card">
+
+        <h2>Interview Feedback</h2>
+
+        <div id="feedback">
+            Complete the interview to get feedback.
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/mockinterview.js"></script>
+
+</body>
+</html>

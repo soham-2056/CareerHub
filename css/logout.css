@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:#F1F5F9;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logout-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logout-card{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width:450px;
+}
+
+.logout-card h1{
+    color:#4F46E5;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.logout-card p{
+    color:#64748B;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#4F46E5;
+    color:white;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#4338CA;
+}

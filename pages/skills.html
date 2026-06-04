@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Skills Tracker</title>
+
+```
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/skills.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+```
+
+</head>
+<body>
+
+<div class="container">
+
+```
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <h2>CareerHub</h2>
+
+    <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="skills.html" class="active">💻 Skills Tracker</a></li>
+        <li><a href="internships.html">🎓 Internships</a></li>
+        <li><a href="resume.html">📄 Resume Analyzer</a></li>
+        <li><a href="mockinterview.html">🎤 Mock Interview</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+        <li><a href="logout.html">🚪 Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>💻 Skills Tracker</h1>
+        <p>
+            Add, manage and track your technical skills.
+        </p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Skills</h3>
+            <h2 id="totalSkills">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Beginner</h3>
+            <h2 id="beginnerCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <h2 id="intermediateCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Advanced</h3>
+            <h2 id="advancedCount">0</h2>
+        </div>
+
+    </div>
+
+    <!-- Add Skill Form -->
+    <div class="skill-form">
+
+        <h2>➕ Add New Skill</h2>
+
+        <input
+            type="text"
+            id="skillName"
+            placeholder="Enter Skill Name"
+        >
+
+        <select id="skillLevel">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <button onclick="addSkill()">
+            Add Skill
+        </button>
+
+    </div>
+
+    <!-- Search Skill -->
+   <div class="search-box">
+    <i class="fas fa-search"></i>
+
+    <input
+        type="text"
+        id="searchSkill"
+        placeholder="Search your skills..."
+    >
+</div>
+
+    <!-- Skills List -->
+    <div class="section-title">
+        <h2>Your Skills</h2>
+    </div>
+
+    <div id="skillContainer">
+
+        <!-- Skills Added Dynamically -->
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/skills.js"></script>
+
+</body>
+</html>

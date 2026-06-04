@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+<div class="login-box">
+
+    <h1>CareerHub</h1>
+
+     <h2>Welcome Back</h2>
+
+    <p>
+        Login to continue your career journey.
+    </p>
+
+    <form onsubmit="loginUser(event)">
+
+       
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        autocomplete="email"
+        required>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        autocomplete="current-password"
+        required>
+
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <div class="links">
+         <a href="forgotpassword.html">
+        Forgot Password?
+    </a> 
+
+        <a href="register.html">
+            Create New Account
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="../js/login.js">
+</script>
+
+</body>
+</html>

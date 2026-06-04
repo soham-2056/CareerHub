@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Internship Portal</title>
+
+
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/internships.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <h2>CareerHub</h2>
+
+    <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="skills.html">💻 Skills Tracker</a></li>
+        <li><a href="internships.html" class="active">🎓 Internships</a></li>
+        <li><a href="resume.html">📄 Resume Analyzer</a></li>
+        <li><a href="mockinterview.html">🎤 Mock Interview</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+        <li><a href="logout.html">🚪 Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🎓 Internship Portal</h1>
+        <p>
+            Discover internships from top companies and
+            kickstart your career journey.
+        </p>
+    </div>
+
+    <!-- Statistics -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Available Internships</h3>
+            <h2>500+</h2>
+        </div>
+
+        <div class="card">
+            <h3>Hiring Companies</h3>
+            <h2>150+</h2>
+        </div>
+
+        <div class="card">
+            <h3>Remote Opportunities</h3>
+            <h2>220+</h2>
+        </div>
+
+        <div class="card">
+            <h3>Applications Sent</h3>
+            <h2>0</h2>
+        </div>
+
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="search-section">
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search internships, companies..."
+            >
+        </div>
+
+        <select id="skillDropdown">
+            <option value="">Select Skill</option>
+
+            <option value="frontend">
+                Frontend Development
+            </option>
+
+            <option value="backend">
+                Backend Development
+            </option>
+
+            <option value="fullstack">
+                Full Stack Development
+            </option>
+
+            <option value="java">
+                Java Development
+            </option>
+
+            <option value="python">
+                Python Development
+            </option>
+
+            <option value="uiux">
+                UI/UX Design
+            </option>
+
+            <option value="data">
+                Data Analytics
+            </option>
+
+        </select>
+
+    </div>
+
+    <!-- Internship Listings -->
+    <div class="section-title">
+        <h2>Recommended Internships</h2>
+    </div>
+
+    <div
+        class="internship-grid"
+        id="internshipContainer">
+
+    </div>
+
+    <!-- Top Companies -->
+    <div class="companies-section">
+
+        <h2>Top Hiring Companies</h2>
+
+        <div class="company-grid">
+
+            <div class="company-card">
+                <i class="fab fa-google"></i>
+                <h3>Google</h3>
+            </div>
+
+            <div class="company-card">
+                <i class="fab fa-microsoft"></i>
+                <h3>Microsoft</h3>
+            </div>
+
+            <div class="company-card">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Amazon</h3>
+            </div>
+
+            <div class="company-card">
+                <i class="fas fa-pen-nib"></i>
+                <h3>Adobe</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/internships.js"></script>
+
+</body>
+</html>

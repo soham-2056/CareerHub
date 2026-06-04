@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>CareerHub</h2>
+
+        <ul>
+            <li><a href="dashboard.html" class="active">🏠 Dashboard</a></li>
+            <li><a href="skills.html">💻 Skills Tracker</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="logout.html">🚪 Logout</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="header">
+            <h1>Welcome Back, Soham 👋</h1>
+            <p>Track your career progress here.</p>
+        </div>
+
+        <!-- Stats Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Resume Score</h3>
+                <h2>85%</h2>
+            </div>
+
+            <div class="card">
+                <h3>Skills Learned</h3>
+                <h2>12</h2>
+            </div>
+
+            <div class="card">
+                <h3>Internships</h3>
+                <h2>8</h2>
+            </div>
+
+            <div class="card">
+                <h3>Jobs Available</h3>
+                <h2>25</h2>
+            </div>
+
+        </div>
+
+        <!-- Analytics -->
+
+        <div class="dashboard-row">
+
+            <div class="chart-card">
+
+                <h2>Overall Progress</h2>
+
+                <div class="circle">
+                    <span>75%</span>
+                </div>
+
+            </div>
+
+            <div class="activity">
+
+                <h2>Recent Activity</h2>
+
+                <ul>
+                    <li>✅ Resume Uploaded</li>
+                    <li>✅ Applied for Google Internship</li>
+                    <li>✅ Completed JavaScript Course</li>
+                    <li>✅ Added React Skill</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-section">
+
+            <h2>Learning Progress</h2>
+
+            <div class="progress-box">
+
+                <p>HTML</p>
+                <div class="bar">
+                    <div class="fill html"></div>
+                </div>
+
+                <p>CSS</p>
+                <div class="bar">
+                    <div class="fill css"></div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="bar">
+                    <div class="fill js"></div>
+                </div>
+
+                <p>React</p>
+                <div class="bar">
+                    <div class="fill react"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Actions -->
+
+        <div class="actions">
+
+ <button onclick="window.location.href='resume.html'">
+    Upload Resume
+</button>
+
+<button onclick="window.location.href='internships.html'">
+    Find Internship
+</button>
+
+<button onclick="window.location.href='mockinterview.html'">
+    Start Interview
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="../js/api.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

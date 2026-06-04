@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Settings</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/settings.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>CareerHub</h2>
+
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="skills.html">💻 Skills Tracker</a></li>
+            <li><a href="internships.html">🎓 Internships</a></li>
+        <li><a href="resume.html">📄 Resume Analyzer</a></li>
+        <li><a href="mockinterview.html" >🎤 Mock Interview</a></li>
+            <li><a href="settings.html" class="active">⚙️ Settings</a></li>
+            <li><a href="logout.html">🚪 Logout</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>⚙️ Settings</h1>
+            <p>Manage your CareerHub account and preferences.</p>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+
+            <img
+                src="https://via.placeholder.com/120"
+                alt="Profile Picture"
+                id="profilePreview"
+            >
+
+            <h3>Soham Gandhi</h3>
+            <p>BTech CSE Student</p>
+
+        </div>
+
+        <!-- Profile Picture Upload -->
+        <div class="settings-card">
+
+            <h2>👤 Profile Picture</h2>
+
+            <input
+                type="file"
+                id="profileImage"
+                accept="image/*"
+            >
+
+            <button onclick="uploadProfileImage()">
+                Upload Photo
+            </button>
+
+        </div>
+
+        <!-- Profile Information -->
+        <div class="settings-card">
+
+            <h2>📋 Profile Information</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+            >
+
+            <input
+                type="text"
+                id="college"
+                placeholder="College Name"
+            >
+
+        </div>
+
+        <!-- Social Profiles -->
+        <div class="settings-card">
+
+            <h2>🔗 Social Profiles</h2>
+
+            <input
+                type="text"
+                id="github"
+                placeholder="GitHub Profile URL"
+            >
+
+            <input
+                type="text"
+                id="linkedin"
+                placeholder="LinkedIn Profile URL"
+            >
+
+        </div>
+
+        <!-- Password -->
+        <div class="settings-card">
+
+            <h2>🔒 Change Password</h2>
+
+            <input
+                type="password"
+                id="currentPassword"
+                placeholder="Current Password"
+            >
+
+            <input
+                type="password"
+                id="newPassword"
+                placeholder="New Password"
+            >
+
+        </div>
+
+        <!-- Resume Visibility -->
+        <div class="settings-card">
+
+            <h2>📄 Resume Visibility</h2>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resumeVisibility"
+                    value="public"
+                >
+                Public
+            </label>
+
+            <br><br>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resumeVisibility"
+                    value="private"
+                >
+                Private
+            </label>
+
+        </div>
+
+        <!-- Notifications -->
+        <div class="settings-card">
+
+            <h2>🔔 Notifications</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="internshipAlert"
+                >
+                Internship Alerts
+            </label>
+
+            <br><br>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="jobAlert"
+                >
+                Job Alerts
+            </label>
+
+            <br><br>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="emailAlert"
+                >
+                Email Notifications
+            </label>
+
+        </div>
+
+        <!-- Appearance -->
+        <div class="settings-card">
+
+            <h2>🌙 Appearance</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="darkMode"
+                >
+                Enable Dark Mode
+            </label>
+
+        </div>
+
+        <!-- Security -->
+        <div class="settings-card">
+
+            <h2>🛡️ Security</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="twoFactor"
+                >
+                Enable Two-Factor Authentication
+            </label>
+
+        </div>
+
+        <!-- Save Button -->
+        <div class="settings-actions">
+
+            <button onclick="saveSettings()">
+                Save Changes
+            </button>
+
+        </div>
+
+        <!-- Delete Account -->
+        <div class="settings-card danger-card">
+
+            <h2>🗑️ Delete Account</h2>
+
+            <p>
+                Deleting your account is permanent and cannot be undone.
+            </p>
+
+            <br>
+
+            <button
+                class="delete-account-btn"
+                onclick="deleteAccount()"
+            >
+                Delete Account
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/settings.js"></script>
+
+</body>
+</html>

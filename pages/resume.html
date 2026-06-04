@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Resume Analyzer</title>
+
+```
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/resume.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+```
+
+</head>
+<body>
+
+<div class="container">
+
+```
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <h2>CareerHub</h2>
+
+    <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="skills.html">💻 Skills Tracker</a></li>
+        <li><a href="internships.html">🎓 Internships</a></li>
+        <li><a href="resume.html" class="active">📄 Resume Analyzer</a></li>
+        <li><a href="mockinterview.html">🎤 Mock Interview</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+        <li><a href="logout.html">🚪 Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>📄 Resume Analyzer</h1>
+        <p>
+            Upload your resume and get career insights.
+        </p>
+    </div>
+
+    <!-- Resume Upload -->
+    <div class="resume-upload">
+
+        <h2>Upload Resume</h2>
+
+        <input
+            type="file"
+            id="resumeFile"
+            accept=".pdf,.doc,.docx"
+        >
+
+        <button id="uploadBtn">
+            Upload Resume
+        </button>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Resume Score</h3>
+            <h2 id="resumeScore">85%</h2>
+        </div>
+
+        <div class="card">
+            <h3>Projects</h3>
+            <h2>4</h2>
+        </div>
+
+        <div class="card">
+            <h3>Skills Found</h3>
+            <h2>12</h2>
+        </div>
+
+        <div class="card">
+            <h3>Certifications</h3>
+            <h2>3</h2>
+        </div>
+
+    </div>
+
+    <!-- Resume Analysis -->
+    <div class="resume-preview">
+
+        <h2>AI Analysis</h2>
+
+        <div class="preview-box" id="aiAnalysis">
+            No resume uploaded yet. Upload a PDF/Word document above to get an instant AI-powered analysis.
+        </div>
+
+    </div>
+
+    <!-- Suggestions & Detected Skills -->
+    <div class="skills-detected">
+
+        <h2>Detected Skills</h2>
+        <div class="skill-tags" id="skillTags"></div>
+
+        <h2 style="margin-top: 20px;">Improvement Suggestions</h2>
+        <ul id="suggestionList" style="list-style: none; padding: 0; line-height: 2;"></ul>
+
+    </div>
+
+    <!-- Download -->
+    <div class="resume-actions">
+
+        <button class="download-btn">
+            Download Resume
+        </button>
+
+        <button class="update-btn">
+            Update Resume
+        </button>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/resume.js"></script>
+
+</body>
+</html>

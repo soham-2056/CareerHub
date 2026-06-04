@@ -1,0 +1,180 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:#2563eb;
+    font-size:32px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1e293b;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    max-width:900px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.hero p{
+    font-size:24px;
+    color:#64748b;
+    max-width:800px;
+    margin-bottom:35px;
+}
+
+/* Button */
+
+.hero button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px 80px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#64748b;
+    line-height:1.7;
+    font-size:17px;
+}
+
+/* Footer */
+
+footer{
+    background:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    color:#64748b;
+    box-shadow:0 -2px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .features{
+        padding:40px 20px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+}
